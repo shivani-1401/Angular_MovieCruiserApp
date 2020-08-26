@@ -1,0 +1,22 @@
+<div class='search-section'>
+  <div class="head-content">
+    <h3>Search for Movie:</h3>
+    <!--Getting movie title input from the user-->
+    <input type="text" [(ngModel)]="title" placeholder="MovieTitle" class="form-control" /><br>
+    <button (click)="getMovie(title)" class="btn btn-primary btm-block">SEARCH</button>
+  </div>
+<!--This section will display the search result based on the movie title given by user-->
+  <section class="d-flex flex-wrap">
+    <div *ngFor="let movie of movies" class="card">
+      <p class="title">Title: {{movie.title}}</p>
+      <p>Release Date: {{movie.release_date}}</p>
+      <p>Average Rating: {{movie.vote_average}}</p>
+      <div *ngIf='movie.poster_path!=null'>
+        <img class="movie-poster" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt="Movie Poster">
+      </div>
+      <div class="card-body">
+        <button class="btn btn-primary" (click)= "add(movie)"> Add to Favourites</button>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,18 @@
+<div class='trending-section'>
+    <div class="head-content">
+        <h2>Click below to see what's trending this week</h2>
+        <button (click)="getTrending()" class="btn btn-primary">KNOW MORE</button>
+    </div>
+<!--Section to display what's trending this week-->
+    <section class="d-flex flex-wrap">
+        <div *ngFor="let movie of movies" class="card">
+            <p class="title">Title: {{movie.original_title}}</p>
+            <p>Release Date: {{movie.release_date}}</p>
+            <p>Average Rating: {{movie.vote_average}}</p>
+            <div *ngIf='movie.poster_path!=null'>
+                <img class="movie-poster" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}"
+                    alt="Movie Poster">
+            </div>
+        </div>
+    </section>
+</div>

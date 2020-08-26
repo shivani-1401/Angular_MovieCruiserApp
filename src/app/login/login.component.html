@@ -1,0 +1,11 @@
+<div class="login-form">
+  <h4>Login to add and access Favourites</h4>
+  <!--Login Form-->
+<form #loginForm='ngForm' (ngSubmit)='login(loginForm.value)'>
+  <input type="text" #name='ngModel' name='username' placeholder="UserName" ngModel [class.error-border]='name.touched && name.invalid' required>
+  <small class='error-message' [class.error-hide]='name.untouched || name.valid'>Name is mandatory</small>
+  <input type="password" #psd='ngModel' name="password" name='password' placeholder="Password" ngModel [class.error-border]='psd.touched && psd.invalid' required>
+  <small class='error-message' [class.error-hide]='psd.untouched || psd.valid'>Password is mandatory</small>
+  <input type="submit" value="Login" class='button'>
+</form>
+</div>
