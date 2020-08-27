@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 export class SearchComponent implements OnInit {
   title: string;
   movies: MovieDetails = [];
+  errorMsg: string;
   constructor(private route: Router, private movieService: MovieService, private searchService: SearchService, private authService: AuthenticationService) { }
   getMovie(title: string) {
     // this.searchService.getMovies(title)
@@ -26,12 +27,16 @@ export class SearchComponent implements OnInit {
   add(mov) {
     if (this.authService.isAuthenticated()) {
       const myToken = this.authService.getToken();
-      this.movieService.addMovie(mov, myToken).subscribe(data => (this.movies = data));
-    } else {
-      this.route.navigate(['./login']);
+      this.movieService.addMovie(mov, myToken).subscribe(data => {
+        this.movies = data;
+      },
+        error => {
+          this.errorMsg = 'Already added to favourites';
+          mov.invalid = true;
+        });
     }
-    console.log(this.movies);
   }
-  ngOnInit() { 
+  
+  ngOnInit() {
   }
 }

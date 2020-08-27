@@ -39,6 +39,61 @@
       "adult": false,
       "overview": "While playing matchmaker to a pair of their friends, two young university students begin developing feelings for each other.",
       "poster_path": "/zqEnM5Ef8QXcbWrPZ311i2TLSUA.jpg"
+    },
+    {
+      "popularity": 4.336,
+      "id": 35064,
+      "video": false,
+      "vote_count": 22,
+      "vote_average": 6.5,
+      "title": "Dhadkan",
+      "release_date": "2000-08-11",
+      "original_language": "hi",
+      "original_title": "Dhadkan",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "backdrop_path": "/e7K4QezLUQnRxytqeW4DWNL50rY.jpg",
+      "adult": false,
+      "overview": "Dhadkan is about Anjali (Shilpa Shetty) who is a girl that hails from an extremely rich and influential family. Her father Mr. Chauhan (Kiran Kumar) is a renowned businessman and has many dreams for his daughter. But Anjali is in love with Dev (Sunil Shetty) who is very poor & often cannot even afford to clothe himself properly. Dev also loves Anjali, wants to marry her so has to meet her father.",
+      "poster_path": "/icWt3AGrkXToqWyBviHEfG7auQV.jpg"
+    },
+    {
+      "popularity": 0.6,
+      "id": 275856,
+      "video": false,
+      "vote_count": 0,
+      "vote_average": 0,
+      "title": "Dhadkanein",
+      "release_date": "2005-01-01",
+      "original_language": "en",
+      "original_title": "Dhadkanein",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "Romance - Star-crossed lovers Raj (Attin Bhalla) and Sandhya (Preeti Mehra) must challenge disapproving families, corrupt police, ruthless gangsters and outdated traditions if their love is to have a chance. Sandhya's pimp father has always wanted her for his flesh trade and arranges to sell her to a Bombay kingpin. With an underworld army on their heels, the lovers become fugitives; running for their lives ... and for love. -  Attin Bhalla, Preeti, Kader Khan",
+      "poster_path": null
+    },
+    {
+      "popularity": 0.875,
+      "vote_count": 1,
+      "video": false,
+      "poster_path": null,
+      "id": 607645,
+      "adult": false,
+      "backdrop_path": null,
+      "original_language": "ur",
+      "original_title": "Dil Mera Dhadkan Teri",
+      "genre_ids": [
+        18,
+        10749,
+        10770
+      ],
+      "title": "Dil Mera Dhadkan Teri",
+      "vote_average": 10,
+      "overview": "",
+      "release_date": "2013-03-28"
     }
   ],
   "user1": [
@@ -62,6 +117,25 @@
       "vote_average": 7.4,
       "overview": "On his first day on the job as a narcotics officer, a rookie cop works with a rogue detective who isn't what he appears.",
       "release_date": "2001-10-05"
+    },
+    {
+      "popularity": 4.336,
+      "id": 35064,
+      "video": false,
+      "vote_count": 22,
+      "vote_average": 6.5,
+      "title": "Dhadkan",
+      "release_date": "2000-08-11",
+      "original_language": "hi",
+      "original_title": "Dhadkan",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "backdrop_path": "/e7K4QezLUQnRxytqeW4DWNL50rY.jpg",
+      "adult": false,
+      "overview": "Dhadkan is about Anjali (Shilpa Shetty) who is a girl that hails from an extremely rich and influential family. Her father Mr. Chauhan (Kiran Kumar) is a renowned businessman and has many dreams for his daughter. But Anjali is in love with Dev (Sunil Shetty) who is very poor & often cannot even afford to clothe himself properly. Dev also loves Anjali, wants to marry her so has to meet her father.",
+      "poster_path": "/icWt3AGrkXToqWyBviHEfG7auQV.jpg"
     }
   ]
 }

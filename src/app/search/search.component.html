@@ -15,7 +15,8 @@
         <img class="movie-poster" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt="Movie Poster">
       </div>
       <div class="card-body">
-        <button class="btn btn-primary" (click)= "add(movie)"> Add to Favourites</button>
+        <button class="btn btn-primary" (click)= "add(movie)"> Add to Favourites</button><br>
+        <small [class.error-message]='movie.invalid' *ngIf='movie.invalid'>{{errorMsg}}</small>
       </div>
     </div>
   </section>
