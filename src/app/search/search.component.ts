@@ -12,8 +12,7 @@ import { Router } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
   title: string;
-  movies = [];
-  movie = new MovieDetails();
+  movies: MovieDetails = [];
   constructor(private route: Router, private movieService: MovieService, private searchService: SearchService, private authService: AuthenticationService) { }
   getMovie(title: string) {
     // this.searchService.getMovies(title)
@@ -26,14 +25,13 @@ export class SearchComponent implements OnInit {
 
   add(mov) {
     if (this.authService.isAuthenticated()) {
-      this.movie.id = mov.id;
-      this.movie.movieName = mov.original_title;
-      this.movie.movieYear = mov.release_date;
-      this.movie.rating = mov.vote_average;
-      return this.movieService.addMovie(this.movie).subscribe(data => (this.movie = data));
+      const myToken = this.authService.getToken();
+      this.movieService.addMovie(mov, myToken).subscribe(data => (this.movies = data));
     } else {
       this.route.navigate(['./login']);
     }
+    console.log(this.movies);
   }
-  ngOnInit() { }
+  ngOnInit() { 
+  }
 }

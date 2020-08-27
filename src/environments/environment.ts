@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   apiKey: 'b965b85eded21527a91c5b7487bb8dfe',
   baseURL: 'https://api.themoviedb.org/3/',
-  localUrl: 'http://localhost:3000/movies'
+  localUrl: 'http://localhost:3000'
 };
 
 /*

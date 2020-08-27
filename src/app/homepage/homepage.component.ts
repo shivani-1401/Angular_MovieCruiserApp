@@ -11,13 +11,9 @@ export class HomepageComponent implements OnInit {
   movies = [];
   constructor(private searchService: SearchService) { }
 
-  getTrending() {
+  ngOnInit() {
     this.searchService.getTrendingMovies()
       .then(response => this.movies = response.results);
-
-  }
-  ngOnInit() {
-
   }
 }
 

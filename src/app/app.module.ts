@@ -14,8 +14,6 @@ import { LoginComponent } from './login/login.component';
 import { AuthenticationService } from './services/authentication.service';
 import { HomepageComponent } from './homepage/homepage.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent, HeaderComponent, FooterComponent, SearchComponent, MovieListComponent, LoginComponent, HomepageComponent

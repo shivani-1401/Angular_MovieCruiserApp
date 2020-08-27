@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/movie.service';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-movie-list',
@@ -9,18 +10,26 @@ import { MovieService } from '../services/movie.service';
 export class MovieListComponent implements OnInit {
   movieList = [];
   deleteList;
-  constructor(private movieService: MovieService) {}
+  constructor(private movieService: MovieService, private authService: AuthenticationService) { }
 
-  delete(id: number) {
-    this.movieService
-      .deleteMovie(id)
-      .subscribe(data => (this.deleteList = data));
-    return this.deleteList;
-  }
+  public token = this.authService.getToken();
 
   ngOnInit() {
-    this.movieService
-      .getFavouriteList()
-      .subscribe(fullList => (this.movieList = fullList));
+
+    this.movieService.getFavouriteList(this.token).subscribe(
+      data => {
+        this.movieList = data;
+      });
+
+  }
+
+  deleteFromFavourites(id) {
+    if (this.authService.isAuthenticated()) {
+      this.movieList = this.movieList.filter( function(elem) {
+      return elem.id !== id;
+      });
+      this.movieService.deleteMovie(id, this.token);
+    }
+
   }
 }

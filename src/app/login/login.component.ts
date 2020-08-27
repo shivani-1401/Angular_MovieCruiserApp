@@ -8,6 +8,7 @@ import { AuthenticationService } from '../services/authentication.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  displayMessage = 'Login';
 
   constructor(private router: Router, private authService: AuthenticationService) { }
 
@@ -21,9 +22,10 @@ export class LoginComponent implements OnInit {
 
     if (token) {
       this.authService.storeToken(token);
+      this.displayMessage = 'Authenticated';
       this.router.navigate(['/movie-list']);
     } else {
-      console.log('Not Authenticated');
+      this.displayMessage = 'Not Authenticated';
       this.router.navigate(['/login']);
     }
   }

@@ -1,5 +1,5 @@
 footer {
-  margin: 20.9em 0 0;
+  margin: 40em 0 0;
   background-color:black;
   color: white;
   text-align: center;
@@ -9,7 +9,7 @@ footer {
 footer h2 {
   margin: 0;
   padding: 1em 2em;
-  font-size: large;
+  font-size: 2em;
 }
 
 i {
@@ -20,6 +20,9 @@ i {
 @media only screen and (max-width: 320px) {
   footer {
     height: 25vh;
+  }
+  footer h2 {
+    font-size: 1em;
   }
 
 }

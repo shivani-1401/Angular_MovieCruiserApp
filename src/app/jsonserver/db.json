@@ -1,22 +1,67 @@
 {
-  "movies": [
+  "admin": [
     {
+      "popularity": 7.524,
       "id": 491629,
-      "movieName": "राज़ी",
-      "movieYear": "2018-05-10",
-      "rating": 7.3
+      "video": false,
+      "vote_count": 80,
+      "vote_average": 7.3,
+      "title": "Raazi",
+      "release_date": "2018-05-10",
+      "original_language": "hi",
+      "original_title": "राज़ी",
+      "genre_ids": [
+        53,
+        28,
+        18
+      ],
+      "backdrop_path": "/d4Muk8ONJPdnSy80tv2LYBxIiOw.jpg",
+      "adult": false,
+      "overview": "An Indian spy is married to a Pakistani military officer during the Indo-Pakistani War of 1971.",
+      "poster_path": "/2rJYiH0rGugxuTY8hffJLuCuF01.jpg"
     },
     {
-      "id": 705678,
-      "movieName": "Love You Zindagi",
-      "movieYear": "2019-01-11",
-      "rating": 0
-    },
+      "popularity": 3.916,
+      "id": 345426,
+      "video": false,
+      "vote_count": 10,
+      "vote_average": 5.1,
+      "title": "Khushi",
+      "release_date": "2003-02-07",
+      "original_language": "hi",
+      "original_title": "खुशी",
+      "genre_ids": [
+        10749,
+        18,
+        28
+      ],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "While playing matchmaker to a pair of their friends, two young university students begin developing feelings for each other.",
+      "poster_path": "/zqEnM5Ef8QXcbWrPZ311i2TLSUA.jpg"
+    }
+  ],
+  "user1": [
     {
-      "id": 26277,
-      "movieName": "मुझसे दोस्ती करोगे!",
-      "movieYear": "2002-08-08",
-      "rating": 6.4
+      "popularity": 19.497,
+      "vote_count": 3649,
+      "video": false,
+      "poster_path": "/sEQansIwI6SfNSpop3N0EBZayWk.jpg",
+      "id": 2034,
+      "adult": false,
+      "backdrop_path": "/nBr7BoXMtlRVMvYuUWNmvqagGIg.jpg",
+      "original_language": "en",
+      "original_title": "Training Day",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "title": "Training Day",
+      "vote_average": 7.4,
+      "overview": "On his first day on the job as a narcotics officer, a rookie cop works with a rogue detective who isn't what he appears.",
+      "release_date": "2001-10-05"
     }
   ]
 }

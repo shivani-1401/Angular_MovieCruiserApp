@@ -11,20 +11,19 @@ export class MovieService {
 
   constructor(private http: HttpClient) { }
 
-  getFavouriteList(): Observable<MovieDetails[]> {
-    return this.http.get<MovieDetails[]>(environment.localUrl);
+  getFavouriteList(user: string): Observable<any> {
+    return this.http.get<any>(environment.localUrl + '/' + user);
   }
 
-  deleteMovie(id: number) {
-    const delURL = environment.localUrl + '/' + id;
-    return this.http.delete(delURL).pipe(
-      map((res: Response) => {
-        return res.json;
-      })
-    );
+  deleteMovie(id: number, user: string) {
+    const delURL = environment.localUrl + '/' + user + '/' + id;
+    return this.http.delete(delURL).subscribe(
+      data => {
+        console.log(data);
+      });
   }
 
-  addMovie(movie: MovieDetails): Observable<MovieDetails> {
-    return this.http.post<MovieDetails>(environment.localUrl, movie);
+  addMovie(movie: MovieDetails, user: string): Observable<MovieDetails> {
+    return this.http.post<MovieDetails>(environment.localUrl + '/' + user, movie);
   }
 }
