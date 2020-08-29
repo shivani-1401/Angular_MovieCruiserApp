@@ -60,22 +60,6 @@
       "poster_path": "/icWt3AGrkXToqWyBviHEfG7auQV.jpg"
     },
     {
-      "popularity": 0.6,
-      "id": 275856,
-      "video": false,
-      "vote_count": 0,
-      "vote_average": 0,
-      "title": "Dhadkanein",
-      "release_date": "2005-01-01",
-      "original_language": "en",
-      "original_title": "Dhadkanein",
-      "genre_ids": [],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "Romance - Star-crossed lovers Raj (Attin Bhalla) and Sandhya (Preeti Mehra) must challenge disapproving families, corrupt police, ruthless gangsters and outdated traditions if their love is to have a chance. Sandhya's pimp father has always wanted her for his flesh trade and arranges to sell her to a Bombay kingpin. With an underworld army on their heels, the lovers become fugitives; running for their lives ... and for love. -  Attin Bhalla, Preeti, Kader Khan",
-      "poster_path": null
-    },
-    {
       "popularity": 0.875,
       "vote_count": 1,
       "video": false,
@@ -94,6 +78,26 @@
       "vote_average": 10,
       "overview": "",
       "release_date": "2013-03-28"
+    },
+    {
+      "popularity": 24.918,
+      "vote_count": 6667,
+      "video": false,
+      "poster_path": "/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
+      "id": 602,
+      "adult": false,
+      "backdrop_path": "/uw4SnKFZ453Gxmj5XR5Susj8TNo.jpg",
+      "original_language": "en",
+      "original_title": "Independence Day",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "title": "Independence Day",
+      "vote_average": 6.8,
+      "overview": "On July 2, a giant alien mothership enters orbit around Earth and deploys several dozen saucer-shaped 'destroyer' spacecraft that quickly lay waste to major cities around the planet. On July 3, the United States conducts a coordinated counterattack that fails. On July 4, a plan is devised to gain access to the interior of the alien mothership in space, in order to plant a nuclear missile.",
+      "release_date": "1996-06-25"
     }
   ],
   "user1": [
@@ -136,6 +140,22 @@
       "adult": false,
       "overview": "Dhadkan is about Anjali (Shilpa Shetty) who is a girl that hails from an extremely rich and influential family. Her father Mr. Chauhan (Kiran Kumar) is a renowned businessman and has many dreams for his daughter. But Anjali is in love with Dev (Sunil Shetty) who is very poor & often cannot even afford to clothe himself properly. Dev also loves Anjali, wants to marry her so has to meet her father.",
       "poster_path": "/icWt3AGrkXToqWyBviHEfG7auQV.jpg"
+    },
+    {
+      "popularity": 0.6,
+      "id": 340727,
+      "video": false,
+      "vote_count": 0,
+      "vote_average": 0,
+      "title": "Hello Zindagi",
+      "release_date": "2010-03-05",
+      "original_language": "en",
+      "original_title": "Hello Zindagi",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "She (Mrunmayee Lagoo) has posters of Jim Morrison and Bob Marley on her walls: rather belated icons for someone her age. She stuffs her drawer with Kama Sutra condoms, and keeps her room locked from parents. During the day, she goes out shoplifting, when not discussing men. The fakeness of cool fries your brains up.  On a random night-out — “Can we go to the disc tonight?” — a stranger offers her a drink. She gulps it down. On another night at a club, upset with her friends, she meets the same fellow again — “Come on, we shall have a nice drink! Let’s dance… Just relax. Just take a chill pill.” She snorts coke, gets hammered; few days later, even moves out of her parents’.",
+      "poster_path": null
     }
   ]
 }

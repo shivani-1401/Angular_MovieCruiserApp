@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService } from '../services/movie.service';
-import { SearchService } from '../services/search.service';
-import { MovieDetails } from '../movie';
-import { AuthenticationService } from '../services/authentication.service';
+import { MovieService } from 'src/app/services/movie.service';
+import { SearchService } from 'src/app/services/search.service';
+import { MovieDetails } from 'src/app/movie';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 import { Router } from '@angular/router';
 
 @Component({

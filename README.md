@@ -1,6 +1,6 @@
 # MovieCruiserAssignment
 
-This application fetches the movie details using TMDB API and user can add/delete movies to favourites.
+This application fetches the movie details using TMDB API and user can add/delete movies to favourites
 
 ## Development server
 
@@ -15,18 +15,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 Open json server in integrated terminal and run npm run json:server 
 
-You'll get resources link like this (http://localhost:3000/admin) & (http://localhost:3000/user1)
+You'll get resources link like this(http://localhost:3000/movies)
 
 ## Username and Password for testing purpose
 
-Username1 - **admin** 
+Username - **admin**
 
-Password1 - **pass**
-
-Username1 - **user1** 
-
-Password1 - **pass1**
+Password - **pass**
 
 ## Made it responsive for 320px mobile devices
 
-## API Key and base URL and local URL is present in environment.ts
+## API Key and base URL is present in environment.ts

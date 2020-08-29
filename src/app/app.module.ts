@@ -3,20 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './mainwork/header/header.component';
+import { FooterComponent } from './mainwork/footer/footer.component';
 import { SearchService } from './services/search.service';
 import { MovieService } from './services/movie.service';
-import { SearchComponent } from './search/search.component';
-import { MovieListComponent } from './movie-list/movie-list.component';
+import { SearchComponent } from './mainwork/search/search.component';
+import { MovieListComponent } from './mainwork//movie-list/movie-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
 import { AuthenticationService } from './services/authentication.service';
-import { HomepageComponent } from './homepage/homepage.component';
+import { HomepageComponent } from './mainwork/homepage/homepage.component';
+import { LoginCompComponent } from './login/login-comp/login-comp.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, FooterComponent, SearchComponent, MovieListComponent, LoginComponent, HomepageComponent
+    AppComponent, HeaderComponent, FooterComponent, SearchComponent, MovieListComponent, HomepageComponent, LoginCompComponent
   ],
   imports: [
     BrowserModule,
