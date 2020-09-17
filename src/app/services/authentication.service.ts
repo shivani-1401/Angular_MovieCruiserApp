@@ -28,7 +28,7 @@ export class AuthenticationService {
     );
 
     if (foundUser) {
-     token = user.username;
+      token = user.username;
     }
     return token;
   }
@@ -41,8 +41,8 @@ export class AuthenticationService {
     return localStorage.getItem('token');
   }
 
-  isAuthenticated() { 
-    if ( this.getToken() ) {
+  isAuthenticated() {
+    if (this.getToken()) {
       return true;
     } else {
       return false;

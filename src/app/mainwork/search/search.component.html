@@ -5,7 +5,7 @@
     <input type="text" [(ngModel)]="title" placeholder="MovieTitle" class="form-control" /><br>
     <button (click)="getMovie(title)" class="btn btn-primary btm-block">SEARCH</button>
   </div>
-<!--This section will display the search result based on the movie title given by user-->
+  <!--This section will display the search result based on the movie title given by user-->
   <section class="d-flex flex-wrap">
     <div *ngFor="let movie of movies" class="card">
       <p class="title">Title: {{movie.title}}</p>
@@ -15,7 +15,7 @@
         <img class="movie-poster" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt="Movie Poster">
       </div>
       <div class="card-body">
-        <button class="btn btn-primary" (click)= "add(movie)"> Add to Favourites</button><br>
+        <button class="btn btn-primary" (click)="add(movie)"> Add to Favourites</button><br>
         <small [class.error-message]='movie.invalid' *ngIf='movie.invalid'>{{errorMsg}}</small>
       </div>
     </div>

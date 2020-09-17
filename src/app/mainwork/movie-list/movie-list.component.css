@@ -1,50 +1,46 @@
-h4{
-   margin:25px auto;
-   text-align: center;
+h4 {
+  margin: 25px auto;
+  text-align: center;
 }
 
-.card{
-      width: 280px;
-      height: 200px;
-      margin: 15px 52px;
-      align-items: center;
-      border: 1px solid black;
-      background-color: lightblue;
-      margin: 10vh auto;
-    
+.card {
+  width: 280px;
+  height: 200px;
+  margin: 15px 52px;
+  align-items: center;
+  border: 1px solid black;
+  background-color: lightblue;
+  margin: 10vh auto;
 }
 
-.name{
-   font-weight: bold;
-   margin-top: 10px;
+.name {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-button{
-   border: 2px solid;
-   border-radius: 5px;
-   margin-top: 5px;
+button {
+  border: 2px solid;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 320px) {
-   .card {
-     width: 300px;
-     height: 200px;
-     margin: 2em;
-   }
- 
-   .movie-poster {
-     width: 200px;
-     height: 250px;
-   }
- 
-   p {
-     font-size: 1em;
-   }
-   
-   h2 {
-     font-size: 1.5em;
-   }
- }
- 
+  .card {
+    width: 300px;
+    height: 200px;
+    margin: 2em;
+  }
 
+  .movie-poster {
+    width: 200px;
+    height: 250px;
+  }
 
+  p {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}

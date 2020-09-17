@@ -6,9 +6,10 @@ import { LoginCompComponent } from './login/login-comp/login-comp.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { HomepageComponent } from './mainwork/homepage/homepage.component';
 
-const routes: Routes = [{ path: '', redirectTo: '/homepage', pathMatch: 'full'},
+const routes: Routes = [{ path: '', redirectTo: '/homepage', pathMatch: 'full' },
 { path: 'search', component: SearchComponent },
-{ path: 'movie-list', component: MovieListComponent, canActivate: [AuthenticationGuard],
+{
+  path: 'movie-list', component: MovieListComponent, canActivate: [AuthenticationGuard],
 },
 { path: 'login', component: LoginCompComponent },
 { path: 'homepage', component: HomepageComponent }];
@@ -19,4 +20,4 @@ const routes: Routes = [{ path: '', redirectTo: '/homepage', pathMatch: 'full'},
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [ MovieListComponent, SearchComponent ];
+export const routingComponents = [MovieListComponent, SearchComponent];

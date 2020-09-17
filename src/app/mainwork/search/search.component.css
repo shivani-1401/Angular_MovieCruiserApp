@@ -55,10 +55,9 @@ h2 {
   font-size: 3em;
 }
 
-.error-message{
+.error-message {
   color: brown;
 }
-
 
 @media only screen and (max-width: 320px) {
   .card {
@@ -74,7 +73,7 @@ h2 {
   p {
     font-size: 1em;
   }
-  
+
   h2 {
     font-size: 1.5em;
   }

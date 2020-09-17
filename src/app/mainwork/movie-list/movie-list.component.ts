@@ -25,8 +25,8 @@ export class MovieListComponent implements OnInit {
 
   deleteFromFavourites(id) {
     if (this.authService.isAuthenticated()) {
-      this.movieList = this.movieList.filter( elem => {
-      return elem.id !== id;
+      this.movieList = this.movieList.filter(elem => {
+        return elem.id !== id;
       });
       this.movieService.deleteMovie(id, this.token);
     }

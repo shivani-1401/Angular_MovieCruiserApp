@@ -2,13 +2,13 @@
 <section class="search-section">
   <h4>Your Favourite List</h4>
   <section class="d-flex flex-wrap">
-  <div *ngFor="let movie of movieList" class="card">
-    <p class="name">Title: {{movie.original_title}}</p>
-    <p>Release Date: {{movie.release_date}}</p>
-    <p>Average Rating: {{movie.vote_average}}</p>
-    <div class="button">
-      <button class="btn btn-primary" (click)="deleteFromFavourites(movie.id)">Delete from Favourites</button>
-    </div>
+    <div *ngFor="let movie of movieList" class="card">
+      <p class="name">Title: {{movie.original_title}}</p>
+      <p>Release Date: {{movie.release_date}}</p>
+      <p>Average Rating: {{movie.vote_average}}</p>
+      <div class="button">
+        <button class="btn btn-primary" (click)="deleteFromFavourites(movie.id)">Delete from Favourites</button>
+      </div>
     </div>
   </section>
 </section>
