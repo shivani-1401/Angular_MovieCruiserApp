@@ -1,11 +1,10 @@
-# MovieCruiserAssignment
+# MovieCruiserApp
 
-This application fetches the movie details using TMDB API and user can add/delete movies to favourites
+This application fetches the movie details using TMDB API and authenticated user can add/delete movies to favourites.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
-
 
 ## Running end-to-end tests
 
