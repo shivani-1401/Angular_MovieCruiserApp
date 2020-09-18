@@ -1,4 +1,4 @@
-# MovieCruiserApp
+# Angular_MovieCruiserApp
 
 This application fetches the movie details using TMDB API and authenticated user can add/delete movies to favourites.
 
